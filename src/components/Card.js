@@ -28,10 +28,11 @@ class Card extends Component {
                 margin: "auto",
                 padding: "10px"
             }}>
-                <img alt="" src="https:placehold.it/75" 
+                <img alt="" src={profile.avatar_url} 
                 style={{
                     float: "left",
-                    display: "block"
+                    display: "block",
+                    width: "75px"
                 }}/>
                 <div className="info" 
                 style={{
@@ -43,8 +44,8 @@ class Card extends Component {
                     style={{
                         fontWeight: "bold",
                         fontSize: "20px"
-                    }}>Name here...</div>
-                    <div className="company">Company here...</div>
+                    }}>{profile.name}</div>
+                    <div className="company">{profile.company}</div>
                 </div>
             </div>
         )
