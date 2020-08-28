@@ -1,22 +1,10 @@
 import React, {Component} from 'react';
 
-const testData = [
-    {name: "Dan Abramov",
-    avatar_url: "https://avatars0.githubusercontent.com/u/810438?v=4",
-    company: "Facebook"},
-    {name: "Sophie Alpert",
-    avatar_url: "https://avatars2.githubusercontent.com/u/6820?v=4",
-    company: "Facebook"},
-    {name: "Sebastian Markbage",
-    avatar_url: "https://avatars2.githubusercontent.com/u/63648?v=4",
-    company: "Facebook"}
-];
-
 class Card extends Component {
 
     render () {
 
-        const profile = testData[0];
+        const profile = this.props;
 
         return (
             <div className="gh-profile" 
