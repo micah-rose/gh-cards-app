@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Card from './components/Card';
 
-function App({title}) {
-
-  return (
-    <div className="App">
-      <h1>{title}</h1>
-    </div>
-  );
+class App extends Component  {
+  render () {
+    return (
+      <div className="App">
+        <h1>{this.props.title}</h1>
+        <Card />
+      </div>
+    );
+  }
 }
 
 export default App;
