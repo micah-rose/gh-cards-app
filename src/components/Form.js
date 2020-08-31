@@ -1,4 +1,4 @@
-import React, {Component, createRef} from 'react';
+import React, {Component} from 'react';
 
 class Form extends Component {
 
@@ -6,7 +6,7 @@ class Form extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log()
+        console.log(this.state.userName)
     }
 
     render () {
