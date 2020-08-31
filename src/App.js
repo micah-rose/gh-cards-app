@@ -3,13 +3,16 @@ import CardList from './components/CardList';
 import Form from './components/Form';
 
 const testData = [
-  {name: "Dan Abramov",
+  {id: 1,
+  name: "Dan Abramov",
   avatar_url: "https://avatars0.githubusercontent.com/u/810438?v=4",
   company: "Facebook"},
-  {name: "Sophie Alpert",
+  {id: 2,
+  name: "Sophie Alpert",
   avatar_url: "https://avatars2.githubusercontent.com/u/6820?v=4",
   company: "Facebook"},
-  {name: "Sebastian Markbage",
+  {id: 3,
+  name: "Sebastian Markbage",
   avatar_url: "https://avatars2.githubusercontent.com/u/63648?v=4",
   company: "Facebook"}
 ];

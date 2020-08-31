@@ -7,7 +7,8 @@ class Card extends Component {
         const profile = this.props;
 
         return (
-            <div className="gh-profile" 
+            <div className="gh-profile"
+            key={profile.id} 
             style={{
                 border: "3px solid grey",
                 boxShadow: "5px 7px lightgrey",
