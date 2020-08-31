@@ -15,12 +15,20 @@ const testData = [
 ];
 
 class App extends Component  {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      profiles: testData
+    };
+  }
+
   render () {
     return (
       <div className="App">
         <h1>{this.props.title}</h1>
         <Form />
-        <CardList profiles={testData}/>
+        <CardList profiles={this.state.profiles}/>
       </div>
     );
   }
