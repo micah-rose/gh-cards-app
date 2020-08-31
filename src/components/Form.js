@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
 
 class Form extends Component {
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+    }
+
     render () {
         return (
             <div>
-            <form action="">
-                <input type="text" placeholder="GitHub Username" />
+            <form onSubmit={this.handleSubmit}>
+                <input type="text" placeholder="GitHub Username" required />
                 <button>Add Card</button>
             </form>
             <br />
