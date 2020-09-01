@@ -7,7 +7,8 @@ class Form extends Component {
 
     handleSubmit = async (event) => {
         event.preventDefault();
-        const resp = await axios.get(`https://api.github.com/users/${this.state.userName}`);
+        const resp = await 
+            axios.get(`https://api.github.com/users/${this.state.userName}`);
         this.props.onSubmit(resp.data)
     }
 
