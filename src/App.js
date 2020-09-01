@@ -30,11 +30,15 @@ class App extends Component  {
     profiles: testData
   };
 
+  addNewProfile = () => {
+    console.log('App', profileData)
+  } 
+
   render () {
     return (
       <div className="App">
         <h1>{this.props.title}</h1>
-        <Form />
+        <Form onSubmit={this.addNewProfile} />
         <CardList profiles={this.state.profiles}/>
       </div>
     );
